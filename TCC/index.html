@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Currículos">
+  <title>Fundamentos AWS</title>
+  <!-- Ícones -->
+  <link rel="shortcut icon" href="imagens/cloud.svg" type="image/x-icon">
+  <!-- Fontes do Google - Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- CSS do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <!-- Ícones do Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <!-- CSS do Projeto -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+    <div class="container py-3">
+      <a class="navbar-brand logo" href="index.html">
+        <img src="imagens/logo1.jpg" alt="Fundamentos AWS" />
+        <span>Escola da Nuvem</span>
+      </a>
+      <!-- Botão do hamburguer -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+        aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-items">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="scrollToTop()">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mini-banners">Cloud AWS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#featured-container">Currículos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer-top">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Slider -->
+  <div class="container-fluid" id="slider-container">
+    <div id="slider" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagens/15410.jpg" class="d-block w-100" alt="Slider 1">
+          <div class="carousel-caption">
+            <h5 class="">Descubra a AWS</h5>
+            <p class="">A Amazon Web Services (AWS) é a plataforma de serviços de computação em nuvem mais abrangente e
+              amplamente adotada do mundo.</p>
+            <a href="https://aws.amazon.com/pt/free/?trk=2ee11bb2-bc40-4546-9852-2c4ad8e8f646&sc_channel=ps&ef_id=CjwKCAjwwb6lBhBJEiwAbuVUSmjYlRn46GpWmmi3kUpw6pgkWSKr22HqzrdZunnO-Tc7Wl0ZW7DdQhoC6NEQAvD_BwE:G:s&s_kwcid=AL!4422!3!561843094926!e!!g!!amazon%20web%20services!15278604629!130587771580"
+              target="_blank" class="btn btn-dark" title="Saiba mais">Saiba mais</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/9150533.jpg" class="d-block w-100" alt="Slider 2">
+          <div class="carousel-caption">
+            <h5 class="">Expanda seus negócios</h5>
+            <p class="">Com a AWS, você pode dimensionar e expandir seus negócios com facilidade, confiabilidade e
+              segurança.</p>
+            <a href="https://aws.amazon.com/pt/free/?trk=2ee11bb2-bc40-4546-9852-2c4ad8e8f646&sc_channel=ps&ef_id=CjwKCAjwwb6lBhBJEiwAbuVUSmjYlRn46GpWmmi3kUpw6pgkWSKr22HqzrdZunnO-Tc7Wl0ZW7DdQhoC6NEQAvD_BwE:G:s&s_kwcid=AL!4422!3!561843094926!e!!g!!amazon%20web%20services!15278604629!130587771580"
+              target="_blank" class="btn btn-dark" title="Saiba mais">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="imagens/v617batch2-bb-01-technology.jpg" class="d-block w-100" alt="Slider 3">
+          <div class="carousel-caption">
+            <h5 class="">Expanda seus negócios</h5>
+            <p class="">Com a AWS, você pode dimensionar e expandir seus negócios com facilidade, confiabilidade e
+              segurança.</p>
+            <a href="https://aws.amazon.com/pt/free/?trk=2ee11bb2-bc40-4546-9852-2c4ad8e8f646&sc_channel=ps&ef_id=CjwKCAjwwb6lBhBJEiwAbuVUSmjYlRn46GpWmmi3kUpw6pgkWSKr22HqzrdZunnO-Tc7Wl0ZW7DdQhoC6NEQAvD_BwE:G:s&s_kwcid=AL!4422!3!561843094926!e!!g!!amazon%20web%20services!15278604629!130587771580"
+              target="_blank" class="btn btn-dark" title="Saiba mais">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev"
+        title="Slide anterior">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next"
+        title="Slide próximo">
+        <i class="bi bi-chevron-right"></i>
+
+      </button>
+    </div>
+  </div>
+
+  <!-- Mini banners -->
+  <div class="container" id="mini-banners">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="card text-center banner-card">
+          <i class="bi bi-server primary-color"></i>
+          <div class="card-body">
+            <h5 class="card-title primary-color">AWS S3</h5>
+            <p class="card-text secondary-color">
+              O Amazon Simple Storage Service (Amazon S3) é um serviço de armazenamento de objetos oferecido pela Amazon
+              Web Services (AWS).
+              Ele permite que você armazene e recupere qualquer quantidade de dados de qualquer local.
+            </p>
+            <a href="https://aws.amazon.com/pt/s3/" target="_blank" class="btn btn-dark" title="Saber mais">Saber
+              mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card text-center banner-card">
+          <i class="bi bi-cloud primary-color"></i>
+          <div class="card-body">
+            <h5 class="card-title primary-color">AWS</h5>
+            <p class="card-text secondary-color">
+              A Amazon Web Services (AWS) é uma plataforma de serviços de computação em nuvem que oferece uma ampla
+              variedade de serviços,
+              incluindo capacidade computacional, armazenamento de banco de dados.
+            </p>
+            <a href="https://aws.amazon.com/pt/free/?trk=2ee11bb2-bc40-4546-9852-2c4ad8e8f646&sc_channel=ps&ef_id=CjwKCAjwwb6lBhBJEiwAbuVUSmjYlRn46GpWmmi3kUpw6pgkWSKr22HqzrdZunnO-Tc7Wl0ZW7DdQhoC6NEQAvD_BwE:G:s&s_kwcid=AL!4422!3!561843094926!e!!g!!amazon%20web%20services!15278604629!130587771580"
+              target="_blank" class="btn btn-dark" title="Saber mais">Saber mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card text-center banner-card">
+          <i class="bi bi-box primary-color"></i>
+          <div class="card-body primary-color">
+            <h5 class="card-title primary-color">AWS CloudFront</h5>
+            <p class="card-text secondary-color">
+              O Amazon CloudFront é um serviço de rede de entrega de conteúdo (CDN) criado para alta performance,
+              segurança e conveniência do desenvolvedor.
+            </p>
+            <a href="https://aws.amazon.com/pt/cloudfront/" target="_blank" class="btn btn-dark"
+              title="Saber mais">Saber mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- DESTAQUES -->
+  <div class="container" id="featured-container">
+    <div class="col-12">
+      <h2 class="title primary-color">Trabalhos em Destaque</h2>
+      <p class="subtitle secondary-color">Conheça nosso Portfólio de Currículos</p>
+    </div>
+    <div class="col-12" id="featured-images">
+      <div class="row g-4">
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="imagens/v617batch2-bb-01-technology.jpg" alt="Currículo " class="img-fluid">
+        <div class="banner-content">
+          <p class="secondary-color">Candidato</p>
+          <a href="imagens/electricity-flowing-smooth-blue-abstract-wave-generated-by-ai.jpg" target="_blank"
+            class="secondary-color" title="Currículo">
+            <h3>Seu nome</h3>
+          </a>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="imagens/v617batch2-bb-01-technology.jpg" alt="Currículo " class="img-fluid">
+        <div class="banner-content">
+          <p class="secondary-color">Candidato</p>
+          <a href="imagens/electricity-flowing-smooth-blue-abstract-wave-generated-by-ai.jpg" target="_blank"
+            class="secondary-color" title="Currículo">
+            <h3>Seu nome</h3>
+          </a>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="imagens/v617batch2-bb-01-technology.jpg" alt="Currículo " class="img-fluid">
+        <div class="banner-content">
+          <p class="secondary-color">Candidato</p>
+          <a href="imagens/electricity-flowing-smooth-blue-abstract-wave-generated-by-ai.jpg" target="_blank"
+            class="secondary-color" title="Currículo">
+            <h3>Seu nome</h3>
+          </a>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="imagens/v617batch2-bb-01-technology.jpg" alt="Currículo " class="img-fluid">
+        <div class="banner-content">
+          <p class="secondary-color">Candidato</p>
+          <a href="imagens/electricity-flowing-smooth-blue-abstract-wave-generated-by-ai.jpg" target="_blank"
+            class="secondary-color" title="Currículo">
+            <h3>Seu nome</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!-- Footer -->
+  <footer class="container-fluid bg-dark-color" id="footer">
+    <div class="container">
+      <div class="row">
+        <!-- FOOTER TOP -->
+        <div class="col-12" id="footer-top">
+          <div class="row justify-content-between">
+            <div class="col-4">
+              <h2>***********</h2>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER DETAILS -->
+        <div class="col-12" id="footer-details">
+          <div class="row">
+            <div class="col-12 col-md-4" id="news-container">
+              <h4>"Descubra o poder da nuvem com a AWS e transforme seu negócio para o futuro."</h4>
+            </div>
+            <div class="col-12 col-md-4" id="contact-container">
+            </div>
+            <div class="col-12 col-md-4" id="links-container">
+              <div class="row">
+                <h4>Você pode estar buscando por:</h4>
+                <div class="col-6">
+                  <ul class="list-unstyled">
+                    <li><a href="" target="_blank" class="secondary-color" title="">Seu linkedin<a href=""
+                          target="_blank" title=""><i class="bi bi-linkedin"></i></a></a></li>
+                    <li><a href="" target="_blank" class="secondary-color" title="">Seu linkedin <a href=""
+                          target="_blank" title=""><i class="bi bi-linkedin"></i></a></a></li>
+                    <li><a href="" target="_blank" class="secondary-color" title="">Seu linkedin<a href=""
+                          target="_blank" title=""><i class="bi bi-linkedin"></i></a></a></li>
+                    <li><a href="" target="_blank" class="secondary-color" title="">Seu linkedin<a href=""
+                          target="_blank" title=""><i class="bi bi-linkedin"></i></a></a></li>
+                    <li><a href="" target="_blank" class="secondary-color" title="">Seu linkedin <a href=""
+                          target="_blank" title=""><i class="bi bi-linkedin"></i></a></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER BOTTOM -->
+        <div class="col-12" id="footer-bottom">
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-3">
+              <p class="secondary-color">*************** &copy;<br>  2023</p>
+            </div>
+            <div class="col-12 col-md-3">
+              <p class="secondary-color">
+                Realizamos o seu projeto com
+                <i class="bi bi-cloud"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript do Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <!-- JavaScript personalizado -->
+  <script src="Javascript/file.js"></script>
+</body>
+
+</html>
